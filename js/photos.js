@@ -1,7 +1,7 @@
 (function(){
 	$(function(){			
 
-		if (checkImgLoad){			
+		if (checkImgLoad()){			
 			waterfall();
 		}		
 
@@ -64,5 +64,5 @@
 			return (this.complete)?true:false;
 		});
 	}
-	
+
 })();
