@@ -1,0 +1,143 @@
+
+html{
+	font-size: 62.5%;
+	color:#222;
+}
+
+::selection{
+	background-color: #b3d4fc;
+	text-shadow: none;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}
+
+.cleanfix:after,/*清除浮动*/
+.cleanfix:before{/*防止顶部塌陷*/
+	content: " ";
+	display: table;
+}
+
+.cleanfix:after{
+	clear: both;
+}
+
+/*=========
+	页面样式设置
+	==========*/
+@font-face { 
+  font-family: Quattrocento; 
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/Quattrocento-Regular.ttf'); 
+} 
+
+body {
+	font-size: 1.2em;
+	background-color: #fff;
+	color: #222;
+	font-family: Quattrocento;
+}
+
+a {
+	text-decoration: none;
+	color: #222;
+}
+
+a:hover {	
+	color: #0ae;
+	cursor: pointer;
+}
+
+/* Navigator */
+
+.nav{
+	width:80%;
+	margin:2rem auto;
+	font-weight:300;
+	border-bottom: 1px solid #666;
+}
+
+.nav ul li {
+	display: inline-block;
+	position: relative;
+	margin-right:2rem;
+	font-size: 2rem;
+}
+
+.nav ul li a {
+	display: inline-block;
+	font-weight: 700;
+	padding: 0.15em 0.25em 0;
+	-webkit-transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	-o-transition: color 0.2s;
+	transition:color 0.2s;
+}
+
+.nav a{color:rgba(0,0,0,0.8);}
+
+.nav a:hover,.nav a:focus{color:#0ae;}
+
+/*=========
+	主体样式设置
+	==========*/
+
+.container {
+	width: 80%;
+	margin: 2rem auto;
+	font-size: 1.5rem;
+	line-height: 2rem;	
+	padding-top: 1rem;
+}
+
+.container article {
+	width: 70%;
+	float: left;
+}
+
+
+.container article div {
+	text-indent: 2rem;
+	margin-bottom: 0.6rem;
+}
+
+.container article h1{
+	font-size: 3.5rem;
+	margin: 0;
+}
+
+.container article h2 {
+	font-weight: normal;
+	font-size: 2rem;
+}
+
+.container article span {
+	padding: 0 1rem;
+	border-right: 1px solid #c0c0c0;
+}
+
+.container article span:nth-child(1) {
+	border-left: 3px solid #0FF;
+}
+
+.container article div a {
+	border-bottom: 1px dotted #333;
+}
+
+.container .photo {
+	width: 30%;
+	float: right;
+}
+
+.container .photo img {
+	display: inline-block;
+	width: 80%;
+	margin: 0 3rem;
+}
