@@ -15,25 +15,22 @@
 <a name="项目结构"></a>
 ## 项目结构
 ├── Readme.md               
-├── dist                     // 发布版本                                                                                 
-├── node_modules             // npm                                                                                 
-├── src                      // 源码                                             
-│   ├── css                                                                    
-│		 │			└──*.css                         
-│   ├── fonts                                                                                          
-│   │      └──fonts  	                                                                                          			 
-│   ├── img                                                                                  
-│		 │		 └──*.jpg/.svg                                                                                           
-│   ├── js                                                                                             
-│		 │		 └──*.js                                                                                                             
-│		 ├── favicon.ioc                                                                                                                
-│		 ├── index.html           // 首页                                                                                          
-│		 ├── Life Story.html                                                                                          
-│		 ├── Lover.html                                                                                          
-│		 ├── Films.html                                                                                          
-│		 └── Photos.html                                                                                          
-├── gulpfile.js              // gulp打包发布流程                                                            
-└── package.json             // npm信息                                                                                          
+├── css                                                                    
+│			└──*.css                         
+├── fonts                                                                                          
+│      └──fonts  	                                                                                          			 
+├── img                                                                                  
+│		 └──*.jpg/.svg                                                                                           
+├── js                                                                                             
+│		 └──*.js                                                                                                             
+├── favicon.ioc                                                                                                                
+├── index.html           // 首页                                                                                          
+├── Life Story.html                                                                                          
+├── Lover.html                                                                                          
+├── Films.html                                                                                          
+├── Photos.html                                                                                          
+├─ gulpfile.js              // gulp打包发布流程                                                            
+├─ package.json             // npm信息                                                                                          
 
 <a name="项目介绍"></a>
 ## 项目介绍
