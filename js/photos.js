@@ -1,10 +1,7 @@
 (function(){
 	$(function(){			
 
-		if (checkImgLoad()){			
-			waterfall();
-		}		
-
+		waterfall();
 		var dateInt={"date":[{"src":"img/War-and-Peace/War-and-Peace01.jpg"},
 		{"src":"img/War-and-Peace/War-and-Peace02.jpg"},
 		{"src":"img/War-and-Peace/War-and-Peace03.jpg"},
@@ -33,7 +30,9 @@
 		var cols=Math.floor($(window).width()/w);
 	  $('#main').width(w*cols).css('margin','0 auto');
 		var hArr=[];
-		$boxs.each(function(index,value){
+		var $img=$boxs.find('img');
+		$img.eq($img.length-1).load(function(){
+			$boxs.each(function(index,value){
 			var h=$boxs.eq(index).outerHeight();
 			if (index<cols) {
 				hArr.push(h);
@@ -46,8 +45,10 @@
 					'left':minIndex*w+'px'
 				});
 				hArr[minIndex]+=$boxs.eq(index).outerHeight();
-			}
-		});		
+				}		
+			});	
+		});
+	
 	}
 
 	function checkScrollSlide(){
@@ -57,12 +58,4 @@
 		var Dheight=$(window).height();
 		return (lastBoxH<scrollTop+Dheight)?true:false;
 	}
-
-	function checkImgLoad(){
-		var $img=$('img');
-		$img.each(function(){
-			return (this.complete)?true:false;
-		});
-	}
-
 })();
